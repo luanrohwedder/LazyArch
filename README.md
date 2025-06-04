@@ -20,16 +20,16 @@ Just run:
 
 
 ## ✨ Features
-⬛ **Uses `yay` for package management**
+⬛ **Uses `yay` for package management**  
 All terminal tools are installed using `yay`.
 
-📦 **Flatpak for desktop applications**
+📦 **Flatpak for desktop applications**  
 Desktop apps are managed and installed via `Flatpak` to ensure sandboxing and easy updates.
 
-🧩 **Modular installation**
+🧩 **Modular installation**  
 Scripts are organized by category (terminal and desktop), making it easy to add or remove components.
 
-🔧 **Easily extensible**
+🔧 **Easily extensible**  
 You can add your own scripts or configuration files without breaking the existing structure.
 
 ## 📂 File Structure
