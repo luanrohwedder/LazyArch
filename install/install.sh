@@ -1,17 +1,18 @@
-echo "Installing terminal tools"
-
+#Install terminal tools
 for app in ~/.local/share/lazyarch/install/terminal/*.sh; do
-  name=$(basename "$app" .sh)
-  echo "Installing $name"
   source "$app"
-  echo "$name installation completed!"
 done
 
-echo "Installing desktop apps"
+#Installiong and configure flatpak for desktop apps
+if ! command -v flatpak &>/dev/null; then
+  yay pacman -S --needed flatpak
+fi
 
+if ! flatpak remote-list | grep -q flathub; then
+  flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+fi
+
+#Install desktop apps
 for app in ~/.local/share/lazyarch/install/desktop/*.sh; do
-  name=$(basename "$app" .sh)
-  echo "Installing $name"
   source "$app"
-  echo "$name installation completed!"
 done
