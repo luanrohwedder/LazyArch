@@ -22,6 +22,6 @@ if ! command -v yay &>/dev/null; then
 fi
 
 # Install packages
-source ~/.local/share/forge-arch/install/install.sh
+source ~/.local/share/lazyarch/install/install.sh
 
 echo "Finish installation"
