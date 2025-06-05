@@ -24,4 +24,4 @@ if ! command -v git &>/dev/null; then
 fi
 
 git clone https://github.com/luanrohwedder/LazyArch.git ~/.local/share/lazyarch
-bash ~/.local/share/lazyarch/setup-system.sh
+bash ~/.local/share/lazyarch/install.sh
