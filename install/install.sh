@@ -5,7 +5,7 @@ done
 
 #Installiong and configure flatpak for desktop apps
 if ! command -v flatpak &>/dev/null; then
-  yay pacman -S --needed flatpak
+  yay pacman -S --noconfirm --needed flatpak
 fi
 
 if ! flatpak remote-list | grep -q flathub; then
