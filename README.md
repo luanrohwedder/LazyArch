@@ -16,7 +16,7 @@ LazyArch is a one-line Arch Linux configuration script. Run it once and install 
 ## 🚀 Running
 Just run:
 
-    curl -s https://raw.githubusercontent.com/luanrohwedder/LazyArch/main/bootstrap.sh | bash
+    curl -s https://raw.githubusercontent.com/luanrohwedder/LazyArch/master/boot.sh | bash
 
 
 ## ✨ Features
