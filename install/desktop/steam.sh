@@ -1,3 +1,3 @@
 if ! flatpak list | grep -q com.valvesoftware.Steam; then
-  flatpak install --user -y flathub com.valvesoftware.Steam
+  flatpak install -y flathub com.valvesoftware.Steam
 fi
